@@ -491,6 +491,11 @@ new_features:
     Added support for wildcard resolution in :ref:`inline_dns_table
     <envoy_v3_api_field_extensions.filters.udp.dns_filter.v3.DnsFilterConfig.ServerContextConfig.inline_dns_table>`
     when DNS filter is working in server mode.
+- area: conn pool
+  change: |
+    Added :ref:`auto_sni_from_upstream <envoy_v3_api_field_config.core.v3.UpstreamHttpProtocolOptions.auto_sni_from_upstream>`
+    to use value of :ref:`hostnames <envoy_v3_api_field_config.endpoint.v3.Endpoint.hostname>` of
+    upstream cluster's endpoints as the value for SNI.
 
 deprecated:
 - area: tracing
